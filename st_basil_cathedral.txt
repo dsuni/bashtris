@@ -1,0 +1,33 @@
++----------------------------|                    |----------------------------+
+|                            |                    |                            |
+|  Score:                    |                    |             NEXT:          |
+|                           [33m.[0m|                    |                            |
+|  Level:                  [33m-+[0m|                    |                            |
+|                           [33m|[0m|                    |                            |
+|                           [33m.[0m|                    |                   [33m.[0m        |
+|                          [36mc[34mo[0m|                    |                  [33m-+-[0m       |
+|         [33m.               [34m:do[0m|                    |                   [33m| [0m       |
+|        [33m-+-           .[0m'[34m;lcl[0m|                    |.                 .[32mc        [0m|
+|         [33m|          [0m.[36m,[34mc::o[36m.[34md[0m|                    |[31m:                .[32m:dc[0m.      |
+|        [32m.c         [36m,;[34m;c[36m.[34md:[36m.[34mx[0m|                    |o             .[32m,lo[0mx[32mdd[0md[32m:.    [0m|
+|       .[32mdox       .[36m;.[34mo[36m.,[34mk[36m,.[34mx[0m|                    |[31md            [33m;[32md[0mo[32mdod[0mk[32mdd[0mx[32mdc[33m.  [0m|
+|     [32m'[33mco[32mxo[33md[32mc[0m,.    .[36m,'[34mx[36m.'[34mx,[36m.[34mx[0m|                    |[31ml[0m.         .[32ml[0mk[32mdo[0mx[32mdox[0mk[32mxod[0mxx[32mc [0m|
+|   [32m:x[33mol[32mxd[33ml[32mxdxd[0m;.   [36m,.[34moc[36m.[34mlc[36m.[34md[0m|                    |c.   [33m.     [0ml[32mo[0mkx[32mod[0mOx[32mod[0mkk[32mdd[0mxk[33m;[0m|
+| .[32mdd[33mco[32mxd[33mc[32mdx[33ml[32mdx[33mo[32md[0m.  .;[34m,l:[0m;[34ml[0m'[34m:[0m|                    |c.  [33m-+-    [0mox[32md[31mO[0mx[32mod[31mO[0mx[32moo[0mk[31mO[32mdo[31mO[33m:[0m|
+|.[32mx[33mlc[32mdx[33mlc[32mdd[33mcl[32mxd[33mc[32md[33ml   [31m.ccclooo[0m|                    |l.  [33m |     '[0mkx[32md[0mO[32mdo[0mxO[32moo[0mx[31m0[0mxk[31md[0m.|
+|.[33mo[31m:[32mdx[33mc:[32mdd[33m:c[32mx[33ml:lcc   [31m.clclooo[0m|                    |:.   [32mc.     [33m'[31md[33mo[31mdo[33ml[31mod[33mll[31mdodc  [0m|
+| '[33m:o[32md[33m:o[32mk[33ml:[32md[33mo:oc:,   [31m.cocloox[0m|                    |[31md[0m..[32m,lcl;.   .[31mlooooooooooo,  [0m|
+|  .[33m':;:[0mc[33m:;c:;c[0mc.    [31m.;c::ccl[0m|                    |[33mo[32mol:o:c:;c' .[31mccccccclcloo,  [0m|
+|    [31m,,;:;;clo[0moc[36mc;[0m.  '[31m:;,clll[0m+--------------------+[32m,coll[33m,[32m:ccl,'[0m.[31m;:cllodl;:lc'  [0m|
+|    [31m:ccl:cc[0mld[36molo[0mxd;.:;.[31m;:[0m,,:''[31mo[0ml,;,;[31m:''':;[0moc[31mc;[0m'::[32ml;;,[33m,[32m:,::;:,c[0m,[31m;:ccclol;:ol'  [0m|
+|   .[31m:ocod[0mdox[36mdx[0mxxO[36mxo[0m;::[31m;:[0m:;::;:[31ml[0mc:c:c[31mo:',ll[0mOo[31mc,[0m'[31ml[0mdd[32m:cc:lcolll::[33m;[31mlc:co[0mo[31modlcoxl[0m. |
+|   .[31m:lcooo[0mk[36mkO[0mkxO[36mkk[0mk[31mcclcloooooodkkkkOx:,;oo[0mKx[31mc;[0m;[31mo[0mxx[33mocccccccccc[0m;c:;:::cc;:cccoc'|
+|  .,;;:c;;cdddododo[31mlcccloolcoodkkdOklc::ol[0mdo[31ml[0m::odd[31moclcclccclc:[0ml::[31ml[0mc:cl::[31ml[0mc:lc,|
+|  ,;;[31m;l[0m:;;;[31m:cccccccl:;clooc:lodkxokd'ccoo;[0m'[31m,loxx[0m:[31m:dlolcdlccoldddxdxddddxdxdxd,[0m|
+|  [31m;lclloooooollocclc::clol:l:odkdddx:ccodc:codxxoodllccolccllllllllllllllllol'[0m|
+|  [31m,:::clccllllclcclc:d;lo;[0mlk;[31mcdko[0mdc[31md,..,:[0m...[31mc:[0m..:;[31m;looooooool:cco,:occoc,olc;[0m.|
+|  [31m;::looc:ododddddo:c[0mx[31m;lo;[0md0[31mlcdko[0mk[31mcd::cllclcclddlloo[0moooooloo[31molllo[0m.[31m;occo;[0m.[31moll[0m' |
+|  [31m;c:coollcllllllcl:l[0mk[31m:lc:[0md0[31mlcodo[0mk[31moxxclooo[0mKx[31mcoxxdlcllccllcclccc,l;c;'';c;o;[0m,,.|
+|  [31m,cccollocc::llolcccl:lllodlooxxxxkxclooo[0mKx[31mloxxocl:;:o[0ml[31mool[0m:[31mod[0ml.[31mcol[0m,  ,[31mlol[0m. [31m:,[0m|
+|  [31m,cccocoo;[0m;;::l:c[31mlccccloooooodkkkkOxclooo[0m0x[31mcoxkc[0m;:,:c;cc;cl:l::[31mcoc;  :col[0m. [31m;'[0m|
+|.'c[31mooo[0mooooclloldloo[31moooood[0mdd[31mddd[0mdxkxkxd[31mood[0mdoxdo[31md[0mxxllocooloolodlolooool;;llooc;lc|
