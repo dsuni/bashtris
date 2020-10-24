@@ -735,17 +735,17 @@ fi
 
 # Start the music if possible
 music=""
-if [ ! -c /dev/dsp ] ; then
-	echo "WARNING: The device /dev/dsp does not exist, or is not a valid character device." >&2
-	echo "         Music will be disabled. Press any key to continue." >&2
-	read -s n1
-elif [ ! -x ./$MUSIC ] ; then
+if [ ! -x ./$MUSIC ] ; then
 	echo "WARNING: Music file not found, or has insufficient permissions. Music will be disabled." >&2
 	echo "         Press any key to continue." >&2
 	read -s n1
-else
+elif [ -e /dev/dsp ] || [ -e /usr/bin/aplay ] ; then
 	( ./$MUSIC ) &
 	music=$!
+else
+	echo "WARNING: Neither OSS nor ALSA is installed on your system. Music will be disabled." >&2
+	echo "         Press any key to continue." >&2
+	read -s n1
 fi
 
 if [ ! -r ./$GRAPHICS ] ; then

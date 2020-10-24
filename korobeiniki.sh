@@ -108,6 +108,10 @@ trap 'exit 0' SIGUSR2
 while true ; do
 	# Run echo command in a subshell to prevent the sound from going berserk when script exits.
 	# (This will cause the tune to play until finished, then stop even if script is killed.)
+	if [ -e /dev/dsp ] ; then
 	( echo -n "$cr_tune_a$cr_tune_a$cr_tune_b" > /dev/dsp ) &>/dev/null &
+	else
+	( echo -n "$cr_tune_a$cr_tune_a$cr_tune_b" | aplay ) &>/dev/null &
+	fi
 	wait
 done
