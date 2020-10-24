@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Bashtris v1.0 (July 26, 2012), a puzzle game for the command line.
-# Copyright (C) 2012 Daniel Suni
+# Bashtris v1.1 (October 24, 2020), a puzzle game for the command line.
+# Copyright (C) 2012, 2020 Daniel Suni
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -735,17 +735,23 @@ fi
 
 # Start the music if possible
 music=""
-if [ ! -c /dev/dsp ] ; then
-	echo "WARNING: The device /dev/dsp does not exist, or is not a valid character device." >&2
-	echo "         Music will be disabled. Press any key to continue." >&2
-	read -s n1
-elif [ ! -x ./$MUSIC ] ; then
+if [ ! -x ./$MUSIC ] ; then
 	echo "WARNING: Music file not found, or has insufficient permissions. Music will be disabled." >&2
 	echo "         Press any key to continue." >&2
 	read -s n1
-else
+elif which aplay &>/dev/null ; then
 	( ./$MUSIC ) &
 	music=$!
+elif [ -c /dev/dsp ] ; then
+	( ./$MUSIC /dev/dsp ) &
+	music=$!
+elif [ -c /dev/dsp1 ] ; then
+	( ./$MUSIC /dev/dsp1 ) &
+	music=$!
+else
+	echo "WARNING: Neither OSS nor ALSA is installed on your system. Music will be disabled." >&2
+	echo "         Press any key to continue." >&2
+	read -s n1
 fi
 
 if [ ! -r ./$GRAPHICS ] ; then

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Korobeiniki v1.0 (July 26, 2012), music for the bastris game.
-# Copyright (C) 2012 Daniel Suni
+# Korobeiniki v1.1 (October 24, 2020), music for the bashtris game.
+# Copyright (C) 2012, 2020 Daniel Suni
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,6 +15,11 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# Playback method should be /dev/dsp -type OSS device. If no playback method
+# is provided ALSA (aplay) is assumed.
+# Thanks to Github user jobbautista9 for ALSA code suggestion
+PLAYBACK_METHOD=$1
 
 # /dev/dsp default = 8000 frames per second, 1 byte per frame
 declare -r FPS=8000
@@ -107,7 +112,11 @@ cr_tune_b=`tune "$tune_b"`
 trap 'exit 0' SIGUSR2
 while true ; do
 	# Run echo command in a subshell to prevent the sound from going berserk when script exits.
-	# (This will cause the tune to play until finished, then stop even if script is killed.)
-	( echo -n "$cr_tune_a$cr_tune_a$cr_tune_b" > /dev/dsp ) &>/dev/null &
+	# (This may cause the tune to play until finished, then stop even if script is killed.)
+	if [ -z $PLAYBACK_METHOD ] ; then
+		( echo -n "$cr_tune_a$cr_tune_a$cr_tune_b" | aplay ) &>/dev/null &
+	else
+		( echo -n "$cr_tune_a$cr_tune_a$cr_tune_b" > $PLAYBACK_METHOD ) &>/dev/null &		
+	fi
 	wait
 done
